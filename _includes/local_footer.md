@@ -62,11 +62,3 @@ PrimesDB</a>
 IMEx is funded by the European Commission under PSIMEx, contract number FP7-HEALTH-2007-223411
 </div>
 </div>
-
-<hr/>
-
-<div class="small padding-top-xlarge">
-<p>IMEX: The International Molecular Exchange Consortium</p>
-Site maintained by the External Services team at <a href="//www.ebi.ac.uk/">EMBL-EBI</a> | <a href="//www.ebi.ac.uk/Information/termsofuse.html">Terms of Use</a> | <a href="//www.ebi.ac.uk/Information/privacy.html">Privacy</a> | <a href="//www.ebi.ac.uk/Information/e-directive.html">Cookies</a>
-
-</div>
