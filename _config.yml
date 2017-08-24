@@ -1,9 +1,9 @@
 # Site settings
-name: EBI Jekyll Boilerplate
-group: EMBL-EBI Web Development
+name: The International Molecular Exchange Consortium
+group: IMEx
 email: noreply@ebi.ac.uk
-domain: //ebiwd.github.io
-baseurl: /EBI-Boilerplate-Jekyll
+domain: //IMEx-site.github.io
+baseurl: /
 permalink: pretty
 
 # Add custom CSS / JS here
@@ -17,7 +17,7 @@ ga_code: 'UA-XXXXX-X'
 
 
 # root repo for this project
-repo:        "https://github.com/ebiwd/EBI-Pattern-library"
+repo:        "https://github.com/ebiwd/IMEx-site"
 source:      .
 destination: ./_site
 exclude:     [node_modules, .sass-cache, gulpfile.js, package.json, HOWTO.md]
