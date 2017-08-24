@@ -9,8 +9,8 @@
           <div class="masthead-inner row">
             <!-- local-title -->
             <div class="columns medium-7" id="local-title">
-              <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.name }}</a></h1>
-              <h4>An implementation of <a href="http://github.com/ebiwd/EBI-Framework">the EBI Visual Framework  <i class="icon icon-generic small" data-icon="x"></i></a></h4>
+              <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.group }}</a></h1>
+              <p>{{site.name}}</p>
             </div>
             <!-- /local-title -->
             <!-- local-nav -->
@@ -27,34 +27,6 @@
                 {% assign group = 'in_local_navigation' %}
                 {% include navigation_list.html %}
               </ul>
-              <!-- <ul class="menu dropdown float-right" data-dropdown-menu data-description="functional">
-                <li class="functional"><a href="#"><i class="icon icon-generic" data-icon="d"></i> Share this</a>
-                  <ul class="menu js">
-                    <li><a href="#">Item 1A Loooong</a></li>
-                    <li>
-                      <a href='#'> Item 1 sub</a>
-                      <ul class='menu'>
-                        <li><a href='#'>Item 1 subA</a></li>
-                        <li><a href='#'>Item 1 subB</a></li>
-                        <li>
-                          <a href='#'> Item 1 sub</a>
-                          <ul class='menu'>
-                            <li><a href='#'>Item 1 subA</a></li>
-                            <li><a href='#'>Item 1 subB</a></li>
-                          </ul>
-                        </li>
-                        <li>
-                          <a href='#'> Item 1 sub</a>
-                          <ul class='menu'>
-                            <li><a href='#'>Item 1 subA</a></li>
-                          </ul>
-                        </li>
-                      </ul>
-                    </li>
-                    <li><a href="#">Item 1B</a></li>
-                  </ul>
-
-              </ul> -->
             </nav>
             <!-- /local-nav -->
           </div>
@@ -75,31 +47,17 @@
           </ul>
         </nav>
         -->
-        <div class="medium-9 columns">
-        {{ content }}
-        </div>
-        <div class="medium-3 columns sidebar" data-sticky-container>
-          <div class="sticky" data-sticky data-anchor="main-content-area"  data-options="marginTop:4;">
-            <h4>See also</h4>
-            <p>These resources will help you engage and understand the EBI Framework.</p>
-            <div class="">
-              <ul class="menu vertical">
-                <li class=""><a href="//github.com/ebiwd/EBI-Framework">Core framework repository <i class="icon icon-generic" data-icon="x"></i></a></li>
-                <li class=""><a href="//ebiwd.github.io/EBI-Framework">Core framework documentations <i class="icon icon-generic" data-icon="x"></i></a></li>
-                <li class=""><a href="//ebiwd.github.io/EBI-Framework/sample-site/">Sample pages <i class="icon icon-generic" data-icon="x"></i></a></li>
-              </ul>
-            </div>
-          </div>
+        <div class="medium-12 columns">
+        {{ content | markdownify}}
         </div>
       </section>
       <!-- Optional local footer (insert citation / project-specific copyright / etc here -->
-      <!--
-        <div id="local-footer" class="local-footer">
-          <div class="row">
-            <span class="reference">How to reference this page: ...</span>
-          </div>
+      <div id="local-footer" class="local-footer">
+        <div class="row">
+          {% capture local_footer %}{% include local_footer.md %}{% endcapture %}
+          {{ local_footer | markdownify }}
         </div>
-      -->
+      </div>
       <!-- End optional local footer -->
     </div><!-- /.container -->
     {% include footer.html %}

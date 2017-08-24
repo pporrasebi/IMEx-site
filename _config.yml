@@ -2,8 +2,8 @@
 name: The International Molecular Exchange Consortium
 group: IMEx
 email: noreply@ebi.ac.uk
-domain: //IMEx-site.github.io
-baseurl: /
+domain: //ebiwd.github.io
+baseurl: /IMEx-site
 permalink: pretty
 
 # Add custom CSS / JS here
@@ -29,5 +29,5 @@ highlighter: rouge
 
 # Allow redirects
 # https://help.github.com/articles/redirects-on-github-pages/
-gems:
-  - jekyll-redirect-from
+#gems:
+#  - jekyll-redirect-from
