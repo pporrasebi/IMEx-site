@@ -9,8 +9,16 @@
           <div class="masthead-inner row">
             <!-- local-title -->
             <div class="columns medium-7" id="local-title">
-              <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.group }}</a></h1>
-              <p>{{site.name}}</p>
+              <a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">
+                <img src="{{site.baseurl}}/static/logos/IMEx_logo_webmedium.png" />
+                <span class="sitename secondary-color">{{site.name}}</span>
+
+              </a>
+              <!-- <h1><a href="{{ site.domain }}{{ site.baseurl }}" title="Back to {{ site.name }} homepage">{{ site.group }}</a></h1> -->
+            </div>
+            <div class="columns medium-5 padding-top-xlarge margin-top-large">
+              {% include search.html %}
+
             </div>
             <!-- /local-title -->
             <!-- local-nav -->

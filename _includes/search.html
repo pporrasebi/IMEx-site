@@ -1,12 +1,13 @@
-<h3>Search the IMEx data resource</h3>
 <form id="imex_db_search" action="http://www.ebi.ac.uk/intact/imex/main.xhtml" method="GET">
-<p><input id="query" name="query" size="30" type="text" /> <input id="imexButton" name="Search" type="submit" value="Search" /></p>
-<div id="search_error_message"></div>
+  <fieldset>
+    <div class="input-group margin-bottom-none margin-top-large">
+      <input type="text" name="query" id="query" class="input-group-field" pattern=".{3,}" tabindex="1" title="At least 3 characters" placeholder="Search the IMEx data resource" required>
+      <div class="input-group-button">
+        <input id="imexButton" class="button icon icon-functional secondary-background" tabindex="2" type="submit" name="Search" value="1">
+      </div>
+    </div>
+  </fieldset>
+  <p id="example" class="small">
+    Use as input: Uniprot KB Accs, Gene names, Publication Ids
+  </p>
 </form>
-<p>Use as input:</p>
-<ul>
-<li>Uniprot KB Accs</li>
-<li>Gene names</li>
-<li>Publication Ids</li>
-</ul>
-<div class="clear"></div>

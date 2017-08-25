@@ -1,0 +1,16 @@
+.masthead-inner {
+  padding-top: 0;
+}
+div.masthead h1 {
+  margin-bottom: 0;
+  line-height: 2.6rem;
+}
+div.masthead {
+  background-color: #C8C8C8;
+  background-image: -moz-linear-gradient(top, #C8C8C8, #909090);
+  background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0, #C8C8C8),color-stop(1, #909090));
+  background-image: -webkit-linear-gradient(#C8C8C8, #909090);
+  background-image: linear-gradient(top, #C8C8C8, #909090);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#C8C8C8', EndColorStr='#909090');
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr='#C8C8C8', EndColorStr='#909090')";
+}
