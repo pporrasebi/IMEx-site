@@ -6,32 +6,50 @@ order: 1
 ---
 
 <div class="columns medium-8" markdown="1">
-# IMEx data
+    # IMEx data
 
-- A non-redundant set of protein-protein interaction data from a broad taxonomic range of organisms
-- Expertly curated from direct submissions or peer-reviewed journals to a consistent high standard.
-- Available in standard formats <a href="http://www.biomedcentral.com/1741-7007/5/44">MITAB</a> or <a href="http://www.psidev.info/index.php?q=node/60">PSI-MI XML 2.5</a>
-- Provided by a network of participating major public domain databases.
+    - A non-redundant set of protein-protein interaction data from a broad taxonomic range of organisms
+    - Expertly curated from direct submissions or peer-reviewed journals to a consistent high standard.
+    - Available in standard formats <a href="http://www.biomedcentral.com/1741-7007/5/44">MITAB</a> or <a
+        href="http://www.psidev.info/index.php?q=node/60">PSI-MI XML 2.5</a>
+    - Provided by a network of participating major public domain databases.
 
-<!--### About IMEx-->
-<!--<iframe width="560" height="315" src="https://www.youtube.com/embed/sSSZUcm8PRM" frameborder="0" allowfullscreen></iframe>-->
+    <!--### About IMEx-->
+    <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/sSSZUcm8PRM" frameborder="0" allowfullscreen></iframe>-->
+
+    <form id="imex_db_search" action="http://www.ebi.ac.uk/intact/imex/main.xhtml" method="GET">
+        <fieldset>
+            <div class="input-group margin-bottom-none margin-top-large">
+                <input type="text" name="query" id="query" class="input-group-field" pattern=".{3,}" tabindex="1"
+                       title="At least 3 characters" placeholder="Search the IMEx data resource" required>
+                <div class="input-group-button">
+                    <input id="imexButton" class="button icon icon-functional secondary-background" tabindex="2"
+                           type="submit" name="Search" value="1">
+                </div>
+            </div>
+        </fieldset>
+        <p id="example" class="small">
+            Use as input: Uniprot KB Accs, Gene names, Publication Ids
+        </p>
+    </form>
 
 </div>
 
 <div class="columns medium-4 margin-top-large callout" markdown="1">
-### News
+    ### News
 
-##### PRIMESDB joins IMEx as associate member
-  **PRIMESDB** provides a centralised knowledgebase and analysis platform for cancer protein interaction networks and has recently joined the IMEx Consortium as an observer member.
-
-
-### Citing IMEx
-<p>Orchard, S., et al.</p>
-<p><a href="http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1931.html">Protein interaction data curation: the International Molecular Exchange (IMEx) consortium Nat Methods 2012, 9, 345-350</a></p>
+    ##### PRIMESDB joins IMEx as associate member
+    **PRIMESDB** provides a centralised knowledgebase and analysis platform for cancer protein interaction networks and
+    has recently joined the IMEx Consortium as an observer member.
 
 
+    ### Citing IMEx
+    <p>Orchard, S., et al.</p>
+    <p><a href="http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1931.html">Protein interaction data curation: the
+        International Molecular Exchange (IMEx) consortium Nat Methods 2012, 9, 345-350</a></p>
 
 
-### Funding
-<p>IMEx was previously funded by the European Commission under <a href="http://www.psimex.org">PSIMEx</a>, contract number FP7-HEALTH-2007-223411</p>
+    ### Funding
+    <p>IMEx was previously funded by the European Commission under <a href="http://www.psimex.org">PSIMEx</a>, contract
+        number FP7-HEALTH-2007-223411</p>
 </div>
