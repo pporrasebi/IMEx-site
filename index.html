@@ -16,20 +16,6 @@ order: 1
 <!--### About IMEx-->
 <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/sSSZUcm8PRM" frameborder="0" allowfullscreen></iframe>-->
 
-    <form id="imex_db_search" action="http://www.ebi.ac.uk/intact/imex/main.xhtml" method="GET">
-        <fieldset>
-            <div class="input-group margin-bottom-none margin-top-large">
-                <input type="text" name="query" id="query" class="input-group-field" pattern=".{3,}" tabindex="1" title="At least 3 characters" placeholder="Search the IMEx data resource" required>
-                <div class="input-group-button">
-                    <input id="imexButton" class="button icon icon-functional secondary-background" tabindex="2" type="submit" name="Search" value="1">
-                </div>
-            </div>
-        </fieldset>
-        <p id="example" class="small">
-            Use as input: Uniprot KB Accs, Gene names, Publication Ids
-        </p>
-    </form>
-
 
 </div>
 
@@ -45,7 +31,23 @@ order: 1
 <p><a href="http://www.nature.com/nmeth/journal/v9/n4/full/nmeth.1931.html">Protein interaction data curation: the International Molecular Exchange (IMEx) consortium Nat Methods 2012, 9, 345-350</a></p>
 
 
-
+    <div>
+        <form id="imex_db_search" action="http://www.ebi.ac.uk/intact/imex/main.xhtml" method="GET">
+            <fieldset>
+                <div class="input-group margin-bottom-none margin-top-large">
+                    <input type="text" name="query" id="query" class="input-group-field" pattern=".{3,}" tabindex="1"
+                           title="At least 3 characters" placeholder="Search the IMEx data resource" required>
+                    <div class="input-group-button">
+                        <input id="imexButton" class="button icon icon-functional secondary-background" tabindex="2"
+                               type="submit" name="Search" value="1">
+                    </div>
+                </div>
+            </fieldset>
+            <p id="example" class="small">
+                Use as input: Uniprot KB Accs, Gene names, Publication Ids
+            </p>
+        </form>
+    </div>
 
 ### Funding
 <p>IMEx was previously funded by the European Commission under <a href="http://www.psimex.org">PSIMEx</a>, contract number FP7-HEALTH-2007-223411</p>
