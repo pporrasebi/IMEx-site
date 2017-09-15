@@ -54,11 +54,3 @@ PrimesDB</a>
 </div>
 
 <hr/>
-
-<div class="row no-underline">
-<img class="columns small-1" src="{{ site.baseurl }}/static/logos/FP7.GIF" />
-<div class="columns small-11" markdown="1">
-#### Funding
-IMEx is funded by the European Commission under PSIMEx, contract number FP7-HEALTH-2007-223411
-</div>
-</div>
