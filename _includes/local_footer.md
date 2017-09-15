@@ -52,5 +52,3 @@ PrimesDB</a>
 </div>
 </div>
 </div>
-
-<hr/>
