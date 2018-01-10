@@ -14,7 +14,7 @@ MINT</a>
 <a href="http://ophid.utoronto.ca/i2d/" class="column padding-bottom-large"><img src="{{ site.baseurl }}/static/logos/imex_id2_s.png" /><br/>
 I2D</a>
 
-<a href="http://matrixdb.ibcp.fr/" class="column padding-bottom-large"><img src="{{ site.baseurl }}/static/logos/imex_matrixdb_s.png" /><br/>
+<a href="http://matrixdb.univ-lyon1.fr/" class="column padding-bottom-large"><img src="{{ site.baseurl }}/static/logos/imex_matrixdb_s.png" /><br/>
 MatrixDB</a>
 
 <a href="http://www.mechanobio.info/" class="column padding-bottom-large"><img src="{{ site.baseurl }}/static/logos/imex_mbinfo_s.png" /><br/>
